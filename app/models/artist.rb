@@ -13,6 +13,6 @@ class Artist < ActiveRecord::Base
   def genre_count
     genres = []
     self.songs.all.each {|song| genres << song.genre}
-    genres.uniq
+    genres.uniq.size
   end
 end

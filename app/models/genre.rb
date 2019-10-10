@@ -13,8 +13,8 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    artists = []
+    artist_names = []
     self.songs.all.each {|song| artists << song.artist.name}
-    artists.uniq.size
+    artist_names.uniq
   end
 end

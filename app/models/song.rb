@@ -14,6 +14,5 @@ class Song < ActiveRecord::Base
     if drake.empty?
 
     end
-
   end
 end

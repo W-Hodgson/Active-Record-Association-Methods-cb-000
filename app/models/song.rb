@@ -13,6 +13,8 @@ class Song < ActiveRecord::Base
     drake = Artist.find_by("name = ?", 'Drake')
     if !drake.empty?
       self.artist = drake
+    else
+
     end
   end
 end
